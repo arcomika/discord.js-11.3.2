@@ -149,7 +149,7 @@ class RichEmbed {
    * @returns {RichEmbed} This embed
    */
   addField(name, value, inline = false) {
-    if (this.fields.length >= 25) throw new RangeError('RichEmbeds may not exceed 25 fields.');
+    if (this.fields.length >= 30) throw new RangeError('RichEmbeds may not exceed 25 fields.');
     name = resolveString(name);
     if (name.length > 256) throw new RangeError('RichEmbed field names may not exceed 256 characters.');
     if (!/\S/.test(name)) throw new RangeError('RichEmbed field names may not be empty.');
